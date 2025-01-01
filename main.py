@@ -1,16 +1,23 @@
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
+        return file_contents
         
-def count_words():
-    count = 0
-    with open("books/frankenstein.txt") as f:
-        words_arr = f.read().split()
-    for word in words_arr:
-        count += 1
-    print(count)
+book = main()
 
-    
-count_words()
+def count_words(book):
+    return len(book.split())
 
-main()
+def count_characters(words):
+    char_count = {}
+
+    for char in words:
+        if char not in char_count:
+            char_count[char] = 1
+        else:
+            char_count[char] += 1
+            
+    print(char_count)
+         
+words = book.lower()
+count_characters(words)
