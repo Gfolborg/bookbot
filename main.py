@@ -34,12 +34,12 @@ def sorted_list(text):
     
 def main():
     book = book_file()
-    number_of_words = word_count(book)
+    num_of_words = word_count(book)
     number_of_letters = letter_count(book)
     sorted_char_list = sorted_list(number_of_letters)
 
     print("--- Begin report of books/frankenstein.txt ---")
-    print(f"{number_of_words} words found in the document\n")
+    print(f"{num_of_words} words found in the document\n")
 
     for letter in sorted_char_list:
         print(f"The '{letter["char"]}' character was found {letter["count"]}")  
