@@ -5,7 +5,6 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
 <br>
 Technologies Used:
 <br>
+1. Python Programming Language 
 <br>
-Python Programming Language 
-<br>
-Visual Studio Code (VSCode)
+2. Visual Studio Code (VSCode)
